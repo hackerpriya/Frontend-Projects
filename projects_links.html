@@ -10,29 +10,43 @@
             padding: 0;
             box-sizing: border-box;
             text-align: center;
-            background-color: rgba(227, 127, 255, 0.033);
+            font-family: "Lora", serif;
+
+            /* background-color: ; */
+        }
+        main{
+          background-color: #fcffe0c5;
+          padding-top: 5%;
         }
         nav{
             display: flex;
             gap: 10px;
-            justify-content: center;
-            background-color: rgba(39, 111, 236, 0.489);
-        }
-        #logo{
-            display: flex;
             justify-content: flex-start;
+            background-color: #D20062;
+            /* margin-bottom: 5%; */
+            /* box-sizing: content-box; */
+        }
+        #logo {
+            justify-content: flex-start; /* Shifts the logo to the left */
+            align-self: center; /* Adjust alignment vertically if needed */
             font-size: xx-large;
+            margin-left: 2%;
             color: rgb(251, 246, 255);
+}
+        #nav-links{
+          margin-left: 20%;
         }
         button{
             margin: 20px;
             height: 30px;
             width: 120px;
             padding: 5px;
+            /* justify-content: center; */
         }
 
         a{
-            color: rgba(30, 21, 199, 0.975);
+            /* color: rgba(30, 21, 199, 0.975); */
+            color:#FF407D;
             text-decoration: wavy;
         }
         a:hover{
@@ -41,15 +55,18 @@
         }
         a>button{
             display: inline-block;
-            margin-right: 10px;
+            margin-right: 0px;
+            margin-left: 0px;
+            
             font-weight: bold;
-            background-color: blueviolet;
-            color: aliceblue;
+            color: rgb(250, 250, 250);
+            background-color: rgb(6, 7, 7);
+            border: 0px;
             border-color: none;
             border-radius: 15px;
         }
         a>button:hover{
-            background-color: #0056b3; /* Darker blue color on hover */
+            background-color: #e8afdd; /* Darker blue color on hover */
         }
         /* h2{
             color: lighter;
@@ -69,299 +86,311 @@
         }
         @media(max-width:1023px){
             nav{
+                display: inline-flex;
                 flex-direction: column;
                 align-items: center;
             }
+            .nav-links{
+              flex-direction: column;
+            }
             table{
                 width: 100%;
-                margin: 0;
+                margin: 0px;
             }
         }
             
         
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <!-- <h1 id="logo">Projects</h1> -->
-        <a href="" class="button"><button>LinkedIn</button></a>
-        <a href="" class="button"><button>YouTube</button></a>
-        <a href="" class="button"><button>GitHub</button></a>
-        <a href="My Resume.pdf" class="button resume"><button>My Resume</button></a>
-        <a href=""><button>My Notes</button></a>
-    </nav>
-    <h1 align="center">Links of My 34 Front-End Development Projects</h1>
-    <h2>HTML Projects</h2>
-    <p><strong>Description : </strong>In these projects, I've used pure HTML to create webpages</p>
-    <table border="2px" align="center" cellpadding="5px">
-            <tr>
-                <th>S.No.</th>
-                <th>Project Name</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <th>1.</th>
-                <th><a href="Project 1. Movie Ranking Project\index.html">Movie Ranking Project</a></th>
-                <th>✅</th>
-            </tr>
-            <tr>
-                <th>2.</th>
-                <th><a href="Project 2. Birthday Invite Project\index.html">Birthday Invite Project</a></th>
-                <th>✅</th>
-            </tr>
-            <tr>
-                <th>3.</th>
-                <th><a href="Project 3. HTML Porfolio Project\index.html">HTML Portfolio</a></th>
-                <th>✅</th>
-            </tr>
-            <tr>
-                <th>4.</th>
-                <th><a href="">Capstone Project 1</a></th>
-                <th>In Progress</th>
-            </tr>
-    </table>
-    <hr>
-    <h2>CSS Projects</h2>
-    <p><strong>Description : </strong>In these projects, I've used HTML and CSS to create beautiful websites.</p>
-    <table border="2px" align="center" cellpadding="5px">
-        <tr>
-            <th>S.No.</th>
-            <th>Project Name</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <th>1.</th>
-            <th><a href="Project 4. Colour Vocab Website\index.html">Color Vocab Website</a></th>
-            <th>✅</th>
-        </tr>
-        <tr>
-            <th>2.</th>
-            <th><a href="Project 5. Motivation Meme Project\index.html">Motivational Poster</a></th>
-            <th>✅</th>
-        </tr>
-        <tr>
-            <th>3.</th>
-            <th><a href="Project 6. CSS Flag Project\index.html">CSS Flag</a></th>
-            <th>✅</th>
-        </tr>
-        <tr>
-            <th>4.</th>
-            <th><a href="Project 7. Web Design Agency Project\index.html">Web Design Agency Website</a></th>
-            <th>✅</th>
-        </tr>
-        <tr>
-            <th>5.</th>
-            <th><a href="#">Pricing Table</a></th>
-            <th>In Progress</th>
-        </tr>
-        <tr>
-            <th>6</th>
-            <th><a href="#">Mondrian Painting</a></th>
-            <th>In Progress</th>
-        </tr>
+        <h1 id="logo">Projects</h1>
+        <div id="nav-links">
+          <a href="" class="button"><button>LinkedIn</button></a>
+          <a href="" class="button"><button>YouTube</button></a>
+          <a href="" class="button"><button>GitHub</button></a>
+          <a href="My Resume.pdf" class="button resume"><button>My Resume</button></a>
+          <a href=""><button>My Notes</button></a>
+        </div>
 
-    </table>
-    <hr>
-    <h2>Bootstrap Projects</h2>
-    <p><strong>Description : </strong>These projects showcase my proficiency in using Bootstrap, a popular front-end framework for building responsive and visually appealing websites. Leveraging Bootstrap's extensive library of pre-designed components and CSS styles, I've created modern and user-friendly web experiences.</p>
-    <table border="2" align="center" cellpadding="5px">
-        <thead>
-          <tr>
-            <th>S.No.</th>
-            <th>Project Name</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <th><a href="#">TinDog Startup Website</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>2</th>
-            <th><a href="#">Capstone Project 2</a></th>
-            <th>In Progress</th>
-          </tr>
-        </tbody>
+    </nav>
+    <main>
+      <h1 align="center">Links of My 38 Front-End Development Projects</h1>
+      <h2>HTML Projects</h2>
+      <p><strong>Description : </strong>In these projects, I've used pure HTML to csreate webpages</p>
+      <table border="2px" align="center" cellpadding="5px">
+              <tr>
+                  <th>S.No.</th>
+                  <th>Project Name</th>
+                  <th>Status</th>
+              </tr>
+              <tr>
+                  <th>1.</th>
+                  <th><a href="Project 1. Movie Ranking Project\index.html">Movie Ranking Project</a></th>
+                  <th>✅</th>
+              </tr>
+              <tr>
+                  <th>2.</th>
+                  <th><a href="Project 2. Birthday Invite Project\index.html">Birthday Invite Project</a></th>
+                  <th>✅</th>
+              </tr>
+              <tr>
+                  <th>3.</th>
+                  <th><a href="Project 3. HTML Porfolio Project\index.html">HTML Portfolio</a></th>
+                  <th>✅</th>
+              </tr>
+              <tr>
+                  <th>4.</th>
+                  <th><a href="">Capstone Project 1</a></th>
+                  <th>In Progress</th>
+              </tr>
       </table>
-      
-      
-    
-    <h2>JavaScript Projects</h2>
-    <p><strong>Description : </strong>In these projects, I've used JavaScript to add interactivity and functionality to web pages.</p>
-    <table border="2" align="center" cellpadding="5px">
-        <thead>
-            <tr>
-                <th>S.No.</th>
-                <th>Project Name</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>1</th>
-                <th><a href="#">Dicee Challenge</a></th>
-                <th>Pending</th>
-            </tr>
-            <tr>
-                <th>2</th>
-                <th><a href="#">Drum Kit</a></th>
-                <th>Pending</th>
-            </tr>
-            <tr>
-                <th>3</th>
-                <th><a href="#">Weather Application</a></th>
-                <th>Pending</th>
-            </tr>
-            <tr>
-                <th>4</th>
-                <th><a href="#">Build Notes App</a></th>
-                <th>Pending</th>
-            </tr>
-            <tr>
-                <th>5</th>
-                <th><a href="#">Text to Voice Converter App</a></th>
-                <th>Pending</th>
-            </tr>
-            <tr>
-                <th>6</th>
-                <th><a href="#">Neomorphism Progress Bar</a></th>
-                <th>Pending</th>
-            </tr>
-        </tbody>
-    </table>
-      
-    <hr>
-    <h2>JQuery Projects</h2>
-    <p><strong>Description : </strong>In these projects, I've used jQuery to enhance web functionality and user experience.</p>
-    <table border="2" align="center" cellpadding="5px">
-        <thead>
+      <hr>
+      <h2>CSS Projects</h2>
+      <p><strong>Description : </strong>In these projects, I've used HTML and CSS to create beautiful websites.</p>
+      <table border="2px" align="center" cellpadding="5px">
           <tr>
-            <th>S.No.</th>
-            <th>Project Name</th>
-            <th>Status</th>
+              <th>S.No.</th>
+              <th>Project Name</th>
+              <th>Status</th>
           </tr>
-        </thead>
-        <tbody>
           <tr>
-            <th>1</th>
-            <th><a href="#">The Simon Game</a></th>
-            <th>Pending</th>
+              <th>1.</th>
+              <th><a href="Project 4. Colour Vocab Website\index.html">Color Vocab Website</a></th>
+              <th>✅</th>
           </tr>
-        </tbody>
+          <tr>
+              <th>2.</th>
+              <th><a href="Project 5. Motivation Meme Project\index.html">Motivational Poster</a></th>
+              <th>✅</th>
+          </tr>
+          <tr>
+              <th>3.</th>
+              <th><a href="Project 6. CSS Flag Project\index.html">CSS Flag</a></th>
+              <th>✅</th>
+          </tr>
+          <tr>
+              <th>4.</th>
+              <th><a href="Project 7. Web Design Agency Project\index.html">Web Design Agency Website</a></th>
+              <th>✅</th>
+          </tr>
+          <tr>
+              <th>5.</th>
+              <th><a href="#">Pricing Table</a></th>
+              <th>In Progress</th>
+          </tr>
+          <tr>
+              <th>6</th>
+              <th><a href="#">Mondrian Painting</a></th>
+              <th>In Progress</th>
+          </tr>
+  
       </table>
+      <hr>
+      <h2>Bootstrap Projects</h2>
+      <p><strong>Description : </strong>These projects showcase my proficiency in using Bootstrap, a popular front-end framework for building responsive and visually appealing websites. Leveraging Bootstrap's extensive library of pre-designed components and CSS styles, I've created modern and user-friendly web experiences.</p>
+      <table border="2" align="center" cellpadding="5px">
+          <thead>
+            <tr>
+              <th>S.No.</th>
+              <th>Project Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th><a href="#">TinDog Startup Website</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>2</th>
+              <th><a href="#">Capstone Project 2</a></th>
+              <th>In Progress</th>
+            </tr>
+          </tbody>
+        </table>
+        
+        
       
-    <hr>
-    <h2>ReactJS Projects</h2>
-    <p><strong>Description : </strong>In these projects, I've used ReactJS to build dynamic and interactive web applications.</p>
-    <table border="2" align="center" cellpadding="5px">
-        <thead>
-          <tr>
-            <th>S.No.</th>
-            <th>Project Name</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <th><a href="#">3D Portfolio</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>2</th>
-            <th><a href="#">AI Powered 3D Website</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>3</th>
-            <th><a href="#">Social Media App</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>4</th>
-            <th><a href="#">Music App</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>5</th>
-            <th><a href="#">YouTube Clone</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>6</th>
-            <th><a href="#">Modern E-Commerce Website</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>7</th>
-            <th><a href="#">Modern Real Estate Website</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>8</th>
-            <th><a href="#">Crypto Currency App</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>9</th>
-            <th><a href="#">Budget Tracker App</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>10</th>
-            <th><a href="#">Conference Video App</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>11</th>
-            <th><a href="#">Chat Application</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>12</th>
-            <th><a href="#">Adiyogini: Creative Yoga Website</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>13</th>
-            <th><a href="#">UI Web Application</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>14</th>
-            <th><a href="#">Responsive Video Player App</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>15</th>
-            <th><a href="#">Responsive Crypto Web Application</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>16</th>
-            <th><a href="#">Product Cart using Redux Toolkit</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>17</th>
-            <th><a href="#">To-Do List App</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>18</th>
-            <th><a href="#">Docs Mini App</a></th>
-            <th>Pending</th>
-          </tr>
-          <tr>
-            <th>19</th>
-            <th><a href="#">Ochi Design Website Clone</a></th>
-            <th>Pending</th>
-          </tr>
-        </tbody>
+      <h2>JavaScript Projects</h2>
+      <p><strong>Description : </strong>In these projects, I've used JavaScript to add interactivity and functionality to web pages.</p>
+      <table border="2" align="center" cellpadding="5px">
+          <thead>
+              <tr>
+                  <th>S.No.</th>
+                  <th>Project Name</th>
+                  <th>Status</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th>1</th>
+                  <th><a href="#">Dicee Challenge</a></th>
+                  <th>Pending</th>
+              </tr>
+              <tr>
+                  <th>2</th>
+                  <th><a href="#">Drum Kit</a></th>
+                  <th>Pending</th>
+              </tr>
+              <tr>
+                  <th>3</th>
+                  <th><a href="#">Weather Application</a></th>
+                  <th>Pending</th>
+              </tr>
+              <tr>
+                  <th>4</th>
+                  <th><a href="#">Build Notes App</a></th>
+                  <th>Pending</th>
+              </tr>
+              <tr>
+                  <th>5</th>
+                  <th><a href="#">Text to Voice Converter App</a></th>
+                  <th>Pending</th>
+              </tr>
+              <tr>
+                  <th>6</th>
+                  <th><a href="#">Neomorphism Progress Bar</a></th>
+                  <th>Pending</th>
+              </tr>
+          </tbody>
       </table>
-      
-    <hr>
+        
+      <hr>
+      <h2>JQuery Projects</h2>
+      <p><strong>Description : </strong>In these projects, I've used jQuery to enhance web functionality and user experience.</p>
+      <table border="2" align="center" cellpadding="5px">
+          <thead>
+            <tr>
+              <th>S.No.</th>
+              <th>Project Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th><a href="#">The Simon Game</a></th>
+              <th>Pending</th>
+            </tr>
+          </tbody>
+        </table>
+        
+      <hr>
+      <h2>ReactJS Projects</h2>
+      <p><strong>Description : </strong>In these projects, I've used ReactJS to build dynamic and interactive web applications.</p>
+      <table border="2" align="center" cellpadding="5px">
+          <thead>
+            <tr>
+              <th>S.No.</th>
+              <th>Project Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th><a href="#">3D Portfolio</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>2</th>
+              <th><a href="#">AI Powered 3D Website</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>3</th>
+              <th><a href="#">Social Media App</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>4</th>
+              <th><a href="#">Music App</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>5</th>
+              <th><a href="#">YouTube Clone</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>6</th>
+              <th><a href="#">Modern E-Commerce Website</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>7</th>
+              <th><a href="#">Modern Real Estate Website</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>8</th>
+              <th><a href="#">Crypto Currency App</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>9</th>
+              <th><a href="#">Budget Tracker App</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>10</th>
+              <th><a href="#">Conference Video App</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>11</th>
+              <th><a href="#">Chat Application</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>12</th>
+              <th><a href="#">Adiyogini: Creative Yoga Website</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>13</th>
+              <th><a href="#">UI Web Application</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>14</th>
+              <th><a href="#">Responsive Video Player App</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>15</th>
+              <th><a href="#">Responsive Crypto Web Application</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>16</th>
+              <th><a href="#">Product Cart using Redux Toolkit</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>17</th>
+              <th><a href="#">To-Do List App</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>18</th>
+              <th><a href="#">Docs Mini App</a></th>
+              <th>Pending</th>
+            </tr>
+            <tr>
+              <th>19</th>
+              <th><a href="#">Ochi Design Website Clone</a></th>
+              <th>Pending</th>
+            </tr>
+          </tbody>
+        </table>
+        
+      <hr>
+    </main>
 </body>
 </html>
