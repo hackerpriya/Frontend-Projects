@@ -74,11 +74,18 @@
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
         .pricing-container{
-          width: 100vh;
-          height: fit-content;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
           flex-direction: column;
           justify-content: space-around;
+          align-items: center;
         }
+        .pricing-plan{
+          width: 40%;
+        }
+
         
       }
     </style>
